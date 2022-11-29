@@ -24,6 +24,10 @@ body {
     place-content: center;
 }
 .desktop-menu {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    background: var(--white);
     width: 100px;
     height: auto;
     border: 1px solid var(--very-light-pink);
@@ -93,6 +97,9 @@ body {
     grid-template-rows: auto 1fr auto;
     width: 300px;
     justify-items: center;
+}
+.inactive {
+    display: none;
 }
 .input {
     background-color: var(--text-input-field);
@@ -209,6 +216,7 @@ nav {
 .navbar-email {
     font-size: var(--sm);
     color: var(--very-light-pink);
+    cursor: pointer;
 }
 .navbar-shopping-cart {
     position: relative;
