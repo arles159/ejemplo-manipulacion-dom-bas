@@ -142,6 +142,8 @@ body {
 }
 .mobile-menu {
     padding: 24px;
+    position: absolute;
+    top: 60px;
 }
 .mobile-menu a{
     text-decoration: none;
@@ -496,7 +498,7 @@ nav {
     margin: 8px 0 32px 0;
 }
 @media (max-width: 640px) {
-    .logo {
+    .logo, .menu {
         display: block;
     }
     .secondary-button {
@@ -526,13 +528,12 @@ nav {
         width: 100%;
         justify-content: center;
     }
-    .menu {
-        display: block;
-    }
-    .navbar-left ul {
+    .navbar-left ul, .navbar-email, .desktop-menu {
         display: none;
     }
-    .navbar-email {
+}
+@media (min-width: 641px) {
+    .mobile-menu {
         display: none;
     }
 }
