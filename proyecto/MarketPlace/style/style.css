@@ -147,6 +147,8 @@ body {
     position: absolute;
     top: 61px;
     background-color: var(--white);
+    left: 0px;
+    width: 100%;
 }
 .mobile-menu a{
     text-decoration: none;
